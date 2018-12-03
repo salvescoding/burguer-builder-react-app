@@ -7,7 +7,6 @@ class BurgerIngredient extends Component {
 
     
     render() {
-
         const ingredient = {
             'bread-bottom': <div className={classes.BreadBottom}></div>,
             'bread-top':    <div className={classes.BreadTop}>
@@ -20,7 +19,7 @@ class BurgerIngredient extends Component {
             'salad':        <div className={classes.Salad}></div>
         }
         return ingredient[this.props.type];
-    }
+    }   
 }
 
 BurgerIngredient.propTypes = {
